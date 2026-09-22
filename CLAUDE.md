@@ -28,6 +28,7 @@ Nunca me deixe achando que uma mudança está no ar quando ela só existe local 
 **Onde as coisas estão**
 - `kit-balcao/` — fonte do projeto. Edite os agentes em `conteudo/agentes/*.md` e as regras em `conteudo/regras-de-ouro.md`. `config.json` guarda WhatsApp, preço e URL. `node build.js` gera `site/` e `prompts/`. Nunca edite `site/` nem `prompts/` à mão.
 - `publicar-github/` — o repositório git (remoto `kowke/kit-balcao`, branch `main`, GitHub Pages). O site vive em https://kowke.github.io/kit-balcao/
+- `referencias/marketingskills/` — biblioteca de terceiros (coreyhaines31/marketingskills, MIT, commit em `referencias/marketingskills.commit.txt`). Só consulta para melhorar os agentes: não é skill ativa e nunca entra no repositório publicado. Não copie texto dela literalmente para os agentes: adapte a técnica ao negócio local brasileiro.
 - Esta pasta (`E:\KITBALCAO`) não é um repositório git. Os comandos git rodam dentro de `publicar-github/`.
 
 **Como publicar (regra 3, na prática)**
