@@ -2,167 +2,398 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Kit Balcão — marketing que só serve para o seu negócio local</title>
 <meta name="description" content="Conte a história do seu negócio numa conversa e receba estratégia, textos, site, Instagram e calendário feitos só para ele. Comece pelo diagnóstico grátis.">
-
 <link rel="canonical" href="https://kowke.github.io/kit-balcao/"><meta property="og:url" content="https://kowke.github.io/kit-balcao/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Kit Balcão — marketing que só serve para o seu negócio local">
 <meta property="og:description" content="Conte a história do seu negócio numa conversa e receba estratégia, textos, site, Instagram e calendário feitos só para ele. Comece pelo diagnóstico grátis.">
 <meta property="og:locale" content="pt_BR">
-<meta name="theme-color" content="#F5EEDF">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,800&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<style>
-:root{--papel:#F5EEDF;--papel-2:#EDE3CF;--tinta:#1C1B18;--tinta-2:#4A463D;--tomate:#C23A22;--tomate-2:#A62F1A;--verde:#1F5F4A;--linha:#D9CDB4;color-scheme:light}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--papel);color:var(--tinta);font:17px/1.55 'Work Sans',system-ui,-apple-system,'Segoe UI',sans-serif;-webkit-text-size-adjust:100%}
-h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.12;margin:0 0 .5em;font-weight:800;letter-spacing:-.01em}
-h1{font-size:clamp(2rem,7.5vw,3.4rem)}
-h2{font-size:clamp(1.55rem,5vw,2.3rem)}
-h3{font-size:1.15rem}
-p{margin:0 0 1em}
-a{color:var(--tomate-2)}
-.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
-section{padding:44px 0}
-.alt{background:var(--papel-2);border-block:1px solid var(--linha)}
-.topo{padding:14px 0;border-bottom:2px solid var(--tinta)}
-.topo .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px}
-.marca{font-family:'Fraunces',Georgia,serif;font-weight:800;font-size:1.25rem;text-decoration:none;color:var(--tinta)}
-.marca span{color:var(--tomate)}
-.btn{display:inline-block;background:var(--tomate);color:#fff;text-decoration:none;font-weight:700;padding:14px 22px;border-radius:10px;border:2px solid var(--tinta);box-shadow:3px 3px 0 var(--tinta);cursor:pointer;font:inherit;font-weight:700;text-align:center}
-.btn:hover{background:var(--tomate-2)}
-.btn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--tinta)}
-.btn.sec{background:var(--papel);color:var(--tinta)}
-.btn.sec:hover{background:var(--papel-2)}
-.btn.peq{padding:9px 14px;font-size:.9rem}
-:focus-visible{outline:3px solid var(--verde);outline-offset:3px}
-.acoes{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
-.etiqueta{display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--verde);border:2px dashed var(--verde);border-radius:999px;padding:3px 12px;margin-bottom:14px}
-.ticket{background:#fff;border:2px dashed var(--tinta);border-radius:14px;padding:18px}
-.grade{display:grid;gap:14px}
-@media(min-width:720px){.grade.g2{grid-template-columns:1fr 1fr}.grade.g3{grid-template-columns:repeat(3,1fr)}section{padding:64px 0}}
-.riscado{text-decoration:line-through;text-decoration-color:var(--tomate);text-decoration-thickness:3px;color:var(--tinta-2)}
-.lista-ag{list-style:none;margin:0;padding:0;display:grid;gap:10px}
-.lista-ag li{display:grid;grid-template-columns:2.4rem 1fr;gap:10px;align-items:start;background:#fff;border:1px solid var(--linha);border-radius:12px;padding:12px}
-.num{font-family:'Fraunces',Georgia,serif;font-weight:800;font-size:1.3rem;color:var(--tomate)}
-.mini{font-size:.92rem;color:var(--tinta-2)}
-details{border-bottom:1px solid var(--linha);padding:14px 0}
-summary{cursor:pointer;font-weight:700}
-details p{margin:.6em 0 0}
-footer{padding:32px 0 96px;border-top:2px solid var(--tinta);font-size:.92rem;color:var(--tinta-2)}
-.barra{position:fixed;left:0;right:0;bottom:0;padding:10px 16px;background:var(--papel);border-top:2px solid var(--tinta);z-index:10}
-.barra .btn{display:block;width:100%}
-@media(min-width:900px){.barra{display:none}footer{padding-bottom:32px}}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
-pre.prompt{white-space:pre-wrap;word-break:break-word;background:#fff;border:1px solid var(--linha);border-radius:10px;padding:12px;font:13px/1.5 ui-monospace,Consolas,monospace;max-height:280px;overflow:auto;margin:10px 0}
-textarea{width:100%;min-height:96px;font:inherit;font-size:15px;padding:10px;border:2px solid var(--tinta);border-radius:10px;background:#fff;color:var(--tinta);resize:vertical}
-label{font-weight:700;display:block;margin:12px 0 6px}
-.ok{color:var(--verde);font-weight:700;min-height:1.4em}
-.chip{display:inline-block;font-size:.78rem;font-weight:700;color:var(--verde);border:2px dashed var(--verde);border-radius:999px;padding:1px 10px;margin-bottom:8px}
-.passos{counter-reset:p;list-style:none;padding:0;margin:0;display:grid;gap:12px}
-.passos li{counter-increment:p;display:grid;grid-template-columns:2.4rem 1fr;gap:10px}
-.passos li::before{content:counter(p);font-family:'Fraunces',Georgia,serif;font-weight:800;font-size:1.5rem;color:var(--tomate)}
+<meta property="og:image" content="https://kowke.github.io/kit-balcao/assets/marca/aikronox-header.png">
+<meta name="theme-color" content="#05040E">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/marca/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/marca/aikronox-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>/* Identidade Aikronox aplicada ao Kit Balcão (landing e diagnóstico).
+   Tokens exatamente como definidos pela marca. Não criar cores novas: só variações de opacidade destes. */
+:root {
+  --bg: #05040E;
+  --surface: #0B0A1F;
+  --border: #221F3D;
+  --text: #F3F1FA;
+  --text-muted: #9490B8;
+  --cyan: #3CE4FC;
+  --blue: #2460FC;
+  --magenta: #A800FC;
+  --gradiente-marca: linear-gradient(135deg, #3CE4FC 0%, #2460FC 45%, #A800FC 100%);
+  --display: 'Space Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --corpo: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, Consolas, monospace;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 400 1.0625rem/1.6 var(--corpo);
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+img { max-width: 100%; height: auto; }
+h1, h2, h3 {
+  font-family: var(--display);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.55em;
+  text-wrap: balance;
+}
+h1 { font-size: clamp(2.15rem, 7.4vw, 4.25rem); }
+h2 { font-size: clamp(1.65rem, 4.8vw, 2.75rem); }
+h3 { font-size: 1.2rem; font-weight: 500; line-height: 1.25; letter-spacing: -0.01em; }
+p { margin: 0 0 1em; }
+a { color: var(--cyan); text-underline-offset: 3px; }
+strong { font-weight: 600; }
+.mono { font-family: var(--mono); }
+
+:focus-visible { outline: 3px solid var(--cyan); outline-offset: 3px; border-radius: 4px; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.pular { position: absolute; left: 16px; top: -60px; background: var(--surface); color: var(--text); padding: 12px 16px; border: 1px solid var(--cyan); border-radius: 8px; z-index: 50; }
+.pular:focus { top: 12px; }
+
+.wrap { width: min(1120px, 100% - 32px); margin-inline: auto; }
+section { padding-block: clamp(52px, 8vw, 104px); }
+.banda { background: var(--surface); border-block: 1px solid var(--border); }
+
+/* rótulos técnicos em mono, minúsculos, sem caixa alta */
+.rotulo {
+  display: inline-flex; align-items: center; gap: 0.6em;
+  font: 500 0.9rem/1.2 var(--mono);
+  color: var(--cyan);
+  margin-bottom: 1.1rem;
+}
+.rotulo::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--cyan); }
+
+/* ---------- cabeçalho ---------- */
+.topo {
+  position: sticky; top: 0; z-index: 30;
+  background: rgba(5, 4, 14, 0.88);
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+.topo .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 68px; }
+.marcas { display: flex; align-items: center; gap: 14px; min-width: 0; }
+.mae { display: flex; align-items: center; min-height: 44px; }
+.mae img { height: 40px; width: auto; display: block; }
+.sep { width: 1px; height: 28px; background: var(--border); flex: none; }
+.produto { display: inline-flex; align-items: center; min-height: 44px; font: 700 1.2rem/1 var(--display); color: var(--text); text-decoration: none; white-space: nowrap; letter-spacing: -0.01em; }
+.topo .btn { display: none; }
+@media (min-width: 720px) {
+  .topo .btn { display: inline-flex; }
+  .mae img { height: 46px; }
+}
+
+/* ---------- botões ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.5em;
+  min-height: 48px; padding: 0 26px;
+  font: 600 1rem/1.2 var(--corpo);
+  color: var(--text); text-decoration: none; text-align: center;
+  border-radius: 12px; border: 1px solid var(--border);
+  background: transparent; cursor: pointer;
+  transition: border-color .2s, box-shadow .2s, transform .2s;
+}
+.btn:hover { border-color: var(--cyan); }
+.btn.cta {
+  border: 2px solid transparent;
+  background: linear-gradient(var(--bg), var(--bg)) padding-box, var(--gradiente-marca) border-box;
+  box-shadow: 0 0 28px rgba(36, 96, 252, 0.28);
+}
+.btn.cta:hover { box-shadow: 0 0 40px rgba(60, 228, 252, 0.34); transform: translateY(-1px); }
+.btn.cta:active { transform: translateY(0); }
+.btn.peq { min-height: 44px; padding: 0 18px; font-size: 0.95rem; }
+.btn.sec { color: var(--text); }
+.acoes { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+
+/* ---------- hero (a única ousadia: a malha de circuito) ---------- */
+.hero { position: relative; overflow: hidden; isolation: isolate; padding-block: clamp(56px, 11vw, 132px) clamp(48px, 8vw, 96px); }
+.malha { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; opacity: 0.9;
+  -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,.28) 0%, #000 62%); mask-image: linear-gradient(90deg, rgba(0,0,0,.28) 0%, #000 62%); }
+.malha path { fill: none; stroke-width: 1.2; stroke-linejoin: round; stroke-dasharray: 1; stroke-dashoffset: 1;
+  animation: traco 1.9s cubic-bezier(.2,.7,.2,1) forwards; animation-delay: calc(var(--i) * 70ms); }
+.malha .c { stroke: var(--cyan); opacity: .5; }
+.malha .b { stroke: var(--blue); opacity: .9; }
+.malha circle { fill: var(--bg); stroke-width: 1.4; opacity: 0; animation: no .45s ease-out forwards; animation-delay: calc(var(--i) * 70ms + 1.5s); }
+.malha circle.c { stroke: var(--cyan); }
+.malha circle.b { stroke: var(--blue); }
+@media (max-width: 719px) {
+  .malha { opacity: 0.5; }
+  .acoes .btn { width: 100%; }
+}
+@keyframes traco { to { stroke-dashoffset: 0; } }
+@keyframes no { to { opacity: 1; } }
+.hero .lead { font-size: clamp(1.05rem, 2.4vw, 1.3rem); max-width: 40em; color: var(--text); }
+.hero h1 { max-width: 15em; }
+.numeros { display: flex; flex-wrap: wrap; gap: 24px 48px; list-style: none; margin: 44px 0 0; padding: 0; }
+.numeros li { display: flex; flex-direction: column; gap: 2px; }
+.numeros strong { font: 500 clamp(2rem, 5vw, 2.8rem)/1 var(--mono); color: var(--cyan); }
+.numeros span { color: var(--text-muted); font-size: 0.95rem; max-width: 15em; }
+
+/* ---------- o teste (momento mais de marca) ---------- */
+.teste-grid { display: grid; gap: 20px; }
+@media (min-width: 960px) { .teste-grid { grid-template-columns: 1.35fr 1fr; align-items: stretch; } }
+.troca {
+  border: 2px solid transparent; border-radius: 20px;
+  background: linear-gradient(var(--surface), var(--surface)) padding-box, var(--gradiente-marca) border-box;
+  padding: clamp(20px, 4vw, 36px);
+}
+.troca h2 { margin-bottom: 0.7em; }
+.tabela-teste { width: 100%; border-collapse: collapse; margin: 8px 0 20px; }
+.tabela-teste th, .tabela-teste td { padding: 14px 8px; text-align: left; border-bottom: 1px solid var(--border); vertical-align: middle; }
+.tabela-teste thead th { font: 500 0.9rem/1.2 var(--mono); color: var(--text-muted); padding-top: 0; }
+.tabela-teste tbody th { font: 500 clamp(1rem, 3.4vw, 1.3rem)/1.25 var(--display); }
+.tabela-teste s { text-decoration-color: var(--magenta); text-decoration-thickness: 2px; color: var(--text); }
+.tabela-teste td { font: 500 0.9rem/1.2 var(--mono); color: var(--cyan); white-space: nowrap; }
+.tabela-teste tr:last-child th, .tabela-teste tr:last-child td { border-bottom: 0; }
+.veredito { font: 500 clamp(1.15rem, 3.6vw, 1.5rem)/1.25 var(--display); margin: 0; }
+.veredito small { display: block; font: 400 0.95rem/1.5 var(--corpo); color: var(--text-muted); margin-top: 8px; }
+.vizinho { border: 1px solid var(--border); border-radius: 20px; padding: clamp(20px, 4vw, 32px); background: var(--surface); display: flex; flex-direction: column; }
+.vizinho h3 { font-size: clamp(1.3rem, 3.4vw, 1.6rem); font-weight: 700; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 4px 0 0; padding: 0; }
+.chips li { font: 400 0.92rem/1 var(--mono); border: 1px solid var(--border); border-radius: 999px; padding: 11px 14px; color: var(--text); }
+
+/* ---------- como funciona ---------- */
+.passos3 { display: grid; gap: 28px; list-style: none; margin: 0; padding: 0; }
+@media (min-width: 860px) { .passos3 { grid-template-columns: repeat(3, 1fr); gap: 36px; } }
+.passos3 li { border-top: 1px solid var(--border); padding-top: 18px; }
+.passos3 .n { display: block; font: 500 clamp(2.2rem, 6vw, 3rem)/1 var(--mono); margin-bottom: 14px;
+  color: var(--cyan); background: var(--gradiente-marca); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.passos3 p { color: var(--text-muted); margin: 0; }
+
+/* ---------- agentes: uma trilha, não uma grade de cartões ---------- */
+.agentes-grid { display: grid; gap: 28px; }
+@media (min-width: 960px) { .agentes-grid { grid-template-columns: 5fr 7fr; gap: 64px; } .agentes-grid > .cab { position: sticky; top: 100px; align-self: start; } }
+.cab p { color: var(--text-muted); max-width: 28em; }
+.trilha { position: relative; list-style: none; margin: 0; padding: 0 0 0 40px; }
+.trilha::before { content: ""; position: absolute; left: 7px; top: 8px; bottom: 8px; width: 2px; background: var(--gradiente-marca); }
+.trilha li { position: relative; padding-bottom: 26px; }
+.trilha li:last-child { padding-bottom: 0; }
+.trilha li::before { content: ""; position: absolute; left: -40px; top: 6px; width: 16px; height: 16px; border-radius: 50%; background: var(--bg); border: 2px solid var(--cyan); }
+.trilha .idx { font: 500 0.9rem/1 var(--mono); color: var(--cyan); display: block; margin-bottom: 6px; }
+.trilha h3 { margin: 0 0 4px; }
+.trilha p { margin: 0; color: var(--text-muted); font-size: 0.98rem; }
+
+/* ---------- regras ---------- */
+.regras { display: grid; gap: 0 48px; border-top: 2px solid transparent; border-image: var(--gradiente-marca) 1; }
+@media (min-width: 760px) { .regras { grid-template-columns: 1fr 1fr; } }
+.regras > div { padding: 22px 0; border-bottom: 1px solid var(--border); }
+.regras h3 { font-weight: 700; margin-bottom: 6px; }
+.regras p { margin: 0; color: var(--text-muted); }
+
+/* ---------- é / não é ---------- */
+.dois { display: grid; gap: 20px; }
+@media (min-width: 860px) { .dois { grid-template-columns: 1fr 1fr; } }
+.dois h2 { font-size: clamp(1.4rem, 4vw, 1.9rem); }
+.para, .nao { border-radius: 20px; padding: clamp(22px, 4vw, 34px); }
+.para { border: 2px solid transparent; background: linear-gradient(var(--surface), var(--surface)) padding-box, var(--gradiente-marca) border-box; }
+.nao { border: 1px solid var(--border); }
+.dois ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.dois li { position: relative; padding-left: 28px; }
+.dois li::before { position: absolute; left: 0; top: 0; font: 500 1rem/1.6 var(--mono); }
+.para li::before { content: "+"; color: var(--cyan); }
+.nao li::before { content: "–"; color: var(--text-muted); }
+.nao li { color: var(--text-muted); }
+
+/* ---------- preço ---------- */
+.preco { display: grid; gap: 28px; align-items: center; }
+@media (min-width: 860px) { .preco { grid-template-columns: 1.2fr 1fr; gap: 56px; } }
+.ticket { border: 1px solid var(--border); border-radius: 20px; background: var(--bg); padding: clamp(22px, 4vw, 34px); }
+.valor { font: 500 clamp(2.6rem, 8vw, 3.6rem)/1 var(--mono); margin: 0 0 4px; color: var(--cyan);
+  background: var(--gradiente-marca); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.valor-nota { color: var(--text-muted); font-size: 0.95rem; margin: 0 0 20px; }
+.ticket .btn { width: 100%; }
+.ticket .mini { color: var(--text-muted); font-size: 0.95rem; margin: 18px 0 0; }
+
+/* ---------- FAQ ---------- */
+.faq details { border-bottom: 1px solid var(--border); }
+.faq summary { min-height: 56px; display: flex; align-items: center; justify-content: space-between; gap: 16px; cursor: pointer; list-style: none; font: 500 1.1rem/1.35 var(--display); padding: 10px 0; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; font: 500 1.4rem/1 var(--mono); color: var(--cyan); flex: none; }
+.faq details[open] summary::after { content: "–"; }
+.faq details[open] { position: relative; padding-left: 18px; }
+.faq details[open]::before { content: ""; position: absolute; left: 0; top: 8px; bottom: 8px; width: 3px; border-radius: 2px; background: var(--gradiente-marca); }
+.faq details p { color: var(--text-muted); margin: 0 0 18px; max-width: 46em; }
+
+/* ---------- rodapé e barra fixa ---------- */
+.rodape { border-top: 1px solid var(--border); background: var(--surface); padding-block: 40px 120px; color: var(--text-muted); font-size: 0.95rem; }
+.rodape .wrap { display: grid; gap: 24px; }
+@media (min-width: 860px) { .rodape { padding-bottom: 40px; } .rodape .wrap { grid-template-columns: 1fr 1fr; align-items: center; } }
+.rodape img.lockup { width: min(340px, 100%); height: auto; display: block; }
+.rodape a { display: inline-flex; align-items: center; min-height: 44px; }
+.rodape p { margin: 0 0 8px; }
+.barra { position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; background: rgba(5, 4, 14, 0.94); border-top: 1px solid var(--border);
+  padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px)); }
+.barra .btn { width: 100%; }
+@media (min-width: 860px) { .barra { display: none; } }
+
+/* ---------- diagnóstico ---------- */
+.hero-simples { padding-block: clamp(44px, 8vw, 88px) clamp(32px, 6vw, 64px); }
+.passos-d { list-style: none; margin: 32px 0 0; padding: 0; display: grid; gap: 0; max-width: 46rem; }
+.passos-d li { display: grid; grid-template-columns: 3.2rem 1fr; gap: 12px; padding: 22px 0; border-top: 1px solid var(--border); }
+.passos-d .n { font: 500 1.9rem/1 var(--mono); color: var(--cyan); }
+.passos-d h3 { margin-bottom: 6px; }
+.passos-d p { color: var(--text-muted); margin: 0 0 14px; }
+.passos-d .btn { margin-top: 4px; }
+.ok { color: var(--cyan); font: 500 0.95rem/1.4 var(--mono); min-height: 1.4em; margin: 12px 0 0; }
+.assistentes { display: flex; flex-wrap: wrap; gap: 10px; }
+.lista { margin: 0 0 1.2em; padding-left: 1.2em; }
+.lista li { margin-bottom: 10px; }
+.lista li::marker { color: var(--cyan); }
+pre.prompt { white-space: pre-wrap; word-break: break-word; background: var(--bg); border: 1px solid var(--border); border-radius: 12px; padding: 16px;
+  font: 400 0.82rem/1.6 var(--mono); color: var(--text); max-height: 320px; overflow: auto; margin: 14px 0 0; }
+details.ver summary { min-height: 48px; display: flex; align-items: center; cursor: pointer; font-weight: 600; color: var(--cyan); }
+
+/* ---------- movimento reduzido: a malha aparece pronta ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .malha path { animation: none; stroke-dashoffset: 0; }
+  .malha circle { animation: none; opacity: 1; }
+  .btn, .btn.cta:hover { transition: none; transform: none; }
+}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Preciso entender de marketing?","acceptedAnswer":{"@type":"Answer","text":"Não. A primeira etapa é uma conversa: o assistente pergunta e você responde como responderia no balcão. Cada entrega seguinte é escrita para ser executada pelo celular, sem equipe."}},{"@type":"Question","name":"Quanto tempo por semana eu preciso ter?","acceptedAnswer":{"@type":"Answer","text":"Você informa na conversa quantas horas tem. O calendário de 30 dias é montado dentro desse limite, com menos posts e mais constância, em vez de uma agenda que você não cumpre."}},{"@type":"Question","name":"Funciona com qual inteligência artificial?","acceptedAnswer":{"@type":"Answer","text":"O kit é texto. Você cola no Claude, no ChatGPT, no Gemini ou em outro assistente de chat. Você precisa ter conta no assistente que escolher."}},{"@type":"Question","name":"A IA não inventa preço e endereço?","acceptedAnswer":{"@type":"Answer","text":"As regras mandam marcar [PERGUNTAR] quando falta informação, e o Supervisor procura dado inventado. Mesmo assim, IA pode errar: confira preço, endereço e horário antes de publicar qualquer coisa."}},{"@type":"Question","name":"Isso garante mais clientes?","acceptedAnswer":{"@type":"Answer","text":"Não. O kit organiza o que você já tem de diferente e entrega um plano que dá para executar. O resultado depende do negócio e da execução. O diagnóstico é honesto: se o problema for preço fora do mercado ou falta de diferencial, ele diz."}},{"@type":"Question","name":"Serve para qualquer negócio?","acceptedAnswer":{"@type":"Answer","text":"Foi desenhado para negócio local de cidade pequena e média, que vende no balcão, no WhatsApp, por agenda ou por entrega. Não foi pensado para loja virtual nacional nem para marca sem endereço."}},{"@type":"Question","name":"Quanto custa o kit completo?","acceptedAnswer":{"@type":"Answer","text":"R$ 27,90 (pagamento único). As condições de pagamento você combina pelo WhatsApp. O diagnóstico com o Entrevistador é grátis e não pede cartão."}}]}</script>
 </head>
 <body>
 
-
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
 <header class="topo"><div class="wrap">
-  <a class="marca" href="index.html">Kit <span>Balcão</span></a>
-  <a class="btn peq" href="diagnostico.html">Diagnóstico grátis</a>
+  <div class="marcas">
+    <span class="mae"><img src="assets/marca/aikronox-header-compacto.png" alt="Aikronox" width="143" height="46"></span>
+    <span class="sep" aria-hidden="true"></span>
+    <a class="produto" href="index.html">Kit Balcão</a>
+  </div>
+  <a class="btn cta peq" href="diagnostico.html">Diagnóstico grátis</a>
 </div></header>
-<main>
-<section><div class="wrap">
-  <span class="etiqueta">Para dono de negócio local</span>
-  <h1>O seu marketing não pode servir para a loja do lado.</h1>
-  <p style="font-size:1.15rem;max-width:40em">Você conta como o seu negócio funciona numa conversa de até 15 perguntas. O Kit Balcão transforma essa conversa em estratégia, textos, site, Instagram, artes e calendário. E tem um supervisor que reprova tudo o que for genérico.</p>
-  <div class="acoes">
-    <a class="btn" href="diagnostico.html">Fazer meu diagnóstico grátis</a>
-    <a class="btn sec" href="#kit">Ver o kit completo</a>
-  </div>
-</div></section>
+<main id="conteudo">
 
-<section class="alt"><div class="wrap">
-  <span class="etiqueta">O inimigo</span>
-  <h2>O texto que qualquer loja poderia usar</h2>
-  <p>Você já viu essas frases em todo lugar:</p>
-  <div class="grade g3">
-    <div class="ticket"><span class="riscado">Qualidade e excelência</span></div>
-    <div class="ticket"><span class="riscado">Venha conferir</span></div>
-    <div class="ticket"><span class="riscado">O melhor da região</span></div>
+<section class="hero">
+  <svg class="malha" viewBox="0 0 1200 560" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><path class="b" pathLength="1" style="--i:0" d="M0 70L139 70L179 109L179 297L153 323L13 323"/><path class="c" pathLength="1" style="--i:1" d="M0 170L187 170L228 129"/><path class="c" pathLength="1" style="--i:2" d="M0 290L87 290L121 256L121 139L94 112"/><path class="c" pathLength="1" style="--i:3" d="M0 400L123 400L168 445"/><path class="b" pathLength="1" style="--i:4" d="M0 500L153 500L179 475L179 303L147 272L65 272L32 305L32 448"/><path class="c" pathLength="1" style="--i:5" d="M1200 40L1013 40L979 74L979 138L1024 184L1159 184L1190 215L1190 350L1164 376"/><path class="c" pathLength="1" style="--i:6" d="M1200 140L1133 140L1093 99"/><path class="c" pathLength="1" style="--i:7" d="M1200 250L1070 250L1045 225L1045 55L1089 11L1194 11"/><path class="b" pathLength="1" style="--i:8" d="M1200 350L1116 350L1076 310L1076 156L1109 122"/><path class="c" pathLength="1" style="--i:9" d="M1200 460L1012 460L977 495"/><path class="c" pathLength="1" style="--i:10" d="M1200 535L1075 535L1037 498L1037 436L1006 404L884 404L858 378L858 207L821 169L745 169L705 209"/><path class="c" pathLength="1" style="--i:11" d="M380 0L380 204L340 244L194 244L168 217L168 60L118 10"/><path class="b" pathLength="1" style="--i:12" d="M700 0L700 81L651 130L539 130L505 164L505 338L480 364L377 364L340 400"/><path class="c" pathLength="1" style="--i:13" d="M960 0L960 94L928 126L854 126L820 160L820 247L772 295L599 295L564 260L564 73L522 30"/><path class="c" pathLength="1" style="--i:14" d="M520 560L520 500L557 463L641 463L667 489"/><path class="c" pathLength="1" style="--i:15" d="M860 560L860 408L814 362L616 362L591 388L591 473L557 507L434 507L409 533"/><circle class="b" style="--i:0" cx="13" cy="323" r="3.4"/><circle class="c" style="--i:1" cx="228" cy="129" r="3.4"/><circle class="c" style="--i:2" cx="94" cy="112" r="3.4"/><circle class="c" style="--i:3" cx="168" cy="445" r="3.4"/><circle class="b" style="--i:4" cx="32" cy="448" r="3.4"/><circle class="c" style="--i:5" cx="1164" cy="376" r="3.4"/><circle class="c" style="--i:6" cx="1093" cy="99" r="3.4"/><circle class="c" style="--i:7" cx="1194" cy="11" r="3.4"/><circle class="b" style="--i:8" cx="1109" cy="122" r="3.4"/><circle class="c" style="--i:9" cx="977" cy="495" r="3.4"/><circle class="c" style="--i:10" cx="705" cy="209" r="3.4"/><circle class="c" style="--i:11" cx="118" cy="10" r="3.4"/><circle class="b" style="--i:12" cx="340" cy="400" r="3.4"/><circle class="c" style="--i:13" cx="522" cy="30" r="3.4"/><circle class="c" style="--i:14" cx="667" cy="489" r="3.4"/><circle class="c" style="--i:15" cx="409" cy="533" r="3.4"/></svg>
+  <div class="wrap">
+    <span class="rotulo">para dono de negócio local</span>
+    <h1>O seu marketing não pode servir para a loja do lado.</h1>
+    <p class="lead">Você conta como o seu negócio funciona numa conversa de até 15 perguntas. O Kit Balcão transforma essa conversa em estratégia, textos, site, Instagram, artes e calendário. E tem um supervisor que reprova tudo o que for genérico.</p>
+    <div class="acoes">
+      <a class="btn cta" href="diagnostico.html">Fazer meu diagnóstico grátis</a>
+      <a class="btn sec" href="#kit">Ver o kit completo</a>
+    </div>
+    <ul class="numeros">
+      <li><strong>15</strong><span>perguntas, no máximo, uma por vez</span></li>
+      <li><strong>11</strong><span>passos do diagnóstico ao pacote revisado</span></li>
+      <li><strong>8</strong><span>nota mínima em cada critério para o Supervisor aprovar</span></li>
+    </ul>
   </div>
-  <p style="margin-top:18px"><strong>Teste da troca de logo:</strong> se dá para trocar o seu nome pelo do concorrente e a frase continua servindo, ela não vende nada. No Kit Balcão, essas frases estão proibidas, e todo texto precisa passar também pelo <strong>teste do vizinho</strong>: alguém da sua cidade tem que reconhecer o seu lugar nele.</p>
+</section>
+
+<section class="banda" id="teste"><div class="wrap">
+  <span class="rotulo">o inimigo</span>
+  <div class="teste-grid">
+    <div class="troca">
+      <h2>Troque o nome. Se a frase ainda serve, ela não é sua.</h2>
+      <table class="tabela-teste">
+        <caption class="sr">Frases proibidas no Kit Balcão: cada uma serve para a sua loja e para a loja do lado</caption>
+        <thead><tr><th scope="col">a frase</th><th scope="col">sua loja</th><th scope="col">loja do lado</th></tr></thead>
+        <tbody>
+          <tr><th scope="row"><s>Qualidade e excelência</s><span class="sr"> (frase proibida)</span></th><td>serve</td><td>serve</td></tr>
+          <tr><th scope="row"><s>Venha conferir</s><span class="sr"> (frase proibida)</span></th><td>serve</td><td>serve</td></tr>
+          <tr><th scope="row"><s>O melhor da região</s><span class="sr"> (frase proibida)</span></th><td>serve</td><td>serve</td></tr>
+        </tbody>
+      </table>
+      <p class="veredito">Serve para os dois? Então não é de nenhum.<small>É o teste da troca de logo. No Kit Balcão, essas frases estão proibidas.</small></p>
+    </div>
+    <div class="vizinho">
+      <span class="rotulo">o teste do vizinho</span>
+      <h3>Alguém da sua cidade reconhece o seu lugar no texto?</h3>
+      <p style="color:var(--text-muted)">Se a resposta é não, o texto volta para refazer. O que conta como detalhe local:</p>
+      <ul class="chips">
+        <li>o bairro</li><li>o hábito da cidade</li><li>o jeito de falar</li><li>uma referência real da Ficha</li>
+      </ul>
+    </div>
+  </div>
 </div></section>
 
 <section id="como"><div class="wrap">
-  <span class="etiqueta">Como funciona</span>
+  <span class="rotulo">como funciona</span>
   <h2>Três passos, tudo pelo celular</h2>
-  <ol class="passos">
-    <li><div><h3>Você conversa</h3><p>O Entrevistador pergunta uma coisa por vez: como o negócio começou, quem é o cliente de verdade, por que ele não vai no concorrente da esquina, quem deixou de comprar, o que você já tentou. Sai a Ficha do Negócio e um diagnóstico honesto.</p></div></li>
-    <li><div><h3>Os agentes trabalham em cima da Ficha</h3><p>Estratégia, textos, identidade visual, site, Instagram, artes e calendário. Cada um recebe a Ficha e a entrega do anterior, então tudo fala a mesma língua.</p></div></li>
-    <li><div><h3>O Supervisor reprova o que for fraco</h3><p>Ele dá nota de 0 a 10 em cinco critérios. Nenhum pode ficar abaixo de 8. Se ficar, você recebe a instrução pronta para colar de volta e refazer. No fim, ele confere se site, Instagram, artes, calendário e ofertas se contradizem em preço, prazo ou promessa.</p></div></li>
+  <ol class="passos3">
+    <li><span class="n">01</span><h3>Você conversa</h3><p>O Entrevistador pergunta uma coisa por vez: como o negócio começou, quem é o cliente de verdade, por que ele não vai no concorrente da esquina, quem deixou de comprar, o que você já tentou. Sai a Ficha do Negócio e um diagnóstico honesto.</p></li>
+    <li><span class="n">02</span><h3>Os agentes trabalham em cima da Ficha</h3><p>Estratégia, textos, identidade visual, site, Instagram, artes e calendário. Cada um recebe a Ficha e a entrega do anterior, então tudo fala a mesma língua.</p></li>
+    <li><span class="n">03</span><h3>O Supervisor reprova o que for fraco</h3><p>Ele dá nota de 0 a 10 em cinco critérios. Nenhum pode ficar abaixo de 8. Se ficar, você recebe a instrução pronta para colar de volta e refazer. No fim, ele confere se site, Instagram, artes, calendário e ofertas se contradizem em preço, prazo ou promessa.</p></li>
   </ol>
 </div></section>
 
-<section class="alt"><div class="wrap">
-  <span class="etiqueta">O que tem dentro</span>
-  <h2>10 agentes e um módulo para o Google</h2>
-  <ul class="lista-ag">
-    <li><span class="num">1</span><div><h3 style="margin:0 0 2px">Entrevistador</h3><span class="mini">Conversa de até 15 perguntas, uma por vez. Ele desce até o fato por trás de cada resposta vaga e procura o cliente que sumiu, não só o que voltou. Sai a Ficha do Negócio e um diagnóstico com o nível de prova de cada ponto forte.</span></div></li>
-    <li><span class="num">2</span><div><h3 style="margin:0 0 2px">Estrategista</h3><span class="mini">Ângulo e inimigo do negócio, oferta de entrada com a conta de que não dá prejuízo, plano de 30/60/90 dias e a métrica única da semana.</span></div></li>
-    <li><span class="num">3</span><div><h3 style="margin:0 0 2px">Redator</h3><span class="mini">Nome e descrição do produto campeão, 5 títulos, resposta para as 5 objeções, mensagens de WhatsApp e o pedido de avaliação.</span></div></li>
-    <li><span class="num">4</span><div><h3 style="margin:0 0 2px">Designer</h3><span class="mini">Paleta, fontes do Google, elemento assinatura para recriar no Canva e um guia de foto para tirar no celular.</span></div></li>
-    <li><span class="num">5</span><div><h3 style="margin:0 0 2px">Construtor de site</h3><span class="mini">Um arquivo HTML só, pronto para publicar, feito para abrir no celular e levar o cliente ao WhatsApp.</span></div></li>
-    <li><span class="num">6</span><div><h3 style="margin:0 0 2px">Instagram</h3><span class="mini">Bio, destaques, posts fixados, 15 ideias, 5 roteiros de Reels gravados no próprio negócio, legendas e hashtags locais.</span></div></li>
-    <li><span class="num">7</span><div><h3 style="margin:0 0 2px">Artes</h3><span class="mini">Briefing de 9 peças e 3 templates que resolvem a maior parte do conteúdo, montados no Canva pelo celular.</span></div></li>
-    <li><span class="num">8</span><div><h3 style="margin:0 0 2px">Calendário</h3><span class="mini">Calendário de 30 dias no tamanho das horas que o dono tem, com gravação em lote e dois pontos de revisão.</span></div></li>
-    <li><span class="num">9</span><div><h3 style="margin:0 0 2px">Supervisor</h3><span class="mini">Dá nota de 0 a 10 a cada entrega. Se algum critério ficar abaixo de 8, devolve a instrução de refação. No fim, confere se site, Instagram, artes, calendário e ofertas se contradizem em preço, prazo ou promessa.</span></div></li>
-    <li><span class="num">10</span><div><h3 style="margin:0 0 2px">Motor de Ofertas</h3><span class="mini">Banco de ofertas do dia, da semana e do mês, cada uma com limite real, a conta de que não dá prejuízo e o texto pronto para Status e post. Roda depois do Calendário, para as ofertas caírem nos dias certos.</span></div></li>
-    <li><span class="num">+</span><div><h3 style="margin:0 0 2px">Módulo Google Meu Negócio</h3><span class="mini">Categorias, descrição, serviços, posts, perguntas, respostas a avaliações e checklist de 10 minutos para o perfil do Google.</span></div></li>
-  </ul>
+<section class="banda" id="agentes"><div class="wrap agentes-grid">
+  <div class="cab">
+    <span class="rotulo">o que tem dentro</span>
+    <h2>10 agentes e um módulo para o Google</h2>
+    <p>Cada agente entrega um pedaço do pacote e passa a Ficha adiante. Você usa na ordem, pelo celular.</p>
+  </div>
+  <ol class="trilha">
+      <li><span class="idx">01</span><h3>Entrevistador</h3><p>Conversa de até 15 perguntas, uma por vez. Ele desce até o fato por trás de cada resposta vaga e procura o cliente que sumiu, não só o que voltou. Sai a Ficha do Negócio e um diagnóstico com o nível de prova de cada ponto forte.</p></li>
+      <li><span class="idx">02</span><h3>Estrategista</h3><p>Ângulo e inimigo do negócio, oferta de entrada com a conta de que não dá prejuízo, plano de 30/60/90 dias e a métrica única da semana.</p></li>
+      <li><span class="idx">03</span><h3>Redator</h3><p>Nome e descrição do produto campeão, 5 títulos, resposta para as 5 objeções, mensagens de WhatsApp e o pedido de avaliação.</p></li>
+      <li><span class="idx">04</span><h3>Designer</h3><p>Paleta, fontes do Google, elemento assinatura para recriar no Canva e um guia de foto para tirar no celular.</p></li>
+      <li><span class="idx">05</span><h3>Construtor de site</h3><p>Um arquivo HTML só, pronto para publicar, feito para abrir no celular e levar o cliente ao WhatsApp.</p></li>
+      <li><span class="idx">06</span><h3>Instagram</h3><p>Bio, destaques, posts fixados, 15 ideias, 5 roteiros de Reels gravados no próprio negócio, legendas e hashtags locais.</p></li>
+      <li><span class="idx">07</span><h3>Artes</h3><p>Briefing de 9 peças e 3 templates que resolvem a maior parte do conteúdo, montados no Canva pelo celular.</p></li>
+      <li><span class="idx">08</span><h3>Calendário</h3><p>Calendário de 30 dias no tamanho das horas que o dono tem, com gravação em lote e dois pontos de revisão.</p></li>
+      <li><span class="idx">09</span><h3>Supervisor</h3><p>Dá nota de 0 a 10 a cada entrega. Se algum critério ficar abaixo de 8, devolve a instrução de refação. No fim, confere se site, Instagram, artes, calendário e ofertas se contradizem em preço, prazo ou promessa.</p></li>
+      <li><span class="idx">10</span><h3>Motor de Ofertas</h3><p>Banco de ofertas do dia, da semana e do mês, cada uma com limite real, a conta de que não dá prejuízo e o texto pronto para Status e post. Roda depois do Calendário, para as ofertas caírem nos dias certos.</p></li>
+      <li><span class="idx">+</span><h3>Módulo Google Meu Negócio</h3><p>Categorias, descrição, serviços, posts, perguntas, respostas a avaliações e checklist de 10 minutos para o perfil do Google.</p></li>
+  </ol>
 </div></section>
 
 <section><div class="wrap">
-  <span class="etiqueta">Regras que não dobram</span>
+  <span class="rotulo">regras que não dobram</span>
   <h2>O que separa isso de pedir texto para uma IA</h2>
-  <div class="grade g2">
-    <div class="ticket"><h3>Só fatos da Ficha</h3><p class="mini" style="margin:0">Se falta informação, o agente escreve [PERGUNTAR] em vez de inventar preço, endereço, depoimento ou promessa.</p></div>
-    <div class="ticket"><h3>Aposta criativa declarada</h3><p class="mini" style="margin:0">Toda entrega termina dizendo qual foi a ideia mais ousada e por que ela só faz sentido para o seu negócio.</p></div>
-    <div class="ticket"><h3>Tom de balcão</h3><p class="mini" style="margin:0">Português de gente, do jeito que você falaria para o cliente, não de agência.</p></div>
-    <div class="ticket"><h3>Cabe no seu tempo</h3><p class="mini" style="margin:0">Nada que precise de equipe. O calendário respeita as horas por semana que você disse ter.</p></div>
+  <div class="regras">
+    <div><h3>Só fatos da Ficha</h3><p>Se falta informação, o agente escreve [PERGUNTAR] em vez de inventar preço, endereço, depoimento ou promessa.</p></div>
+    <div><h3>Aposta criativa declarada</h3><p>Toda entrega termina dizendo qual foi a ideia mais ousada e por que ela só faz sentido para o seu negócio.</p></div>
+    <div><h3>Tom de balcão</h3><p>Português de gente, do jeito que você falaria para o cliente, não de agência.</p></div>
+    <div><h3>Cabe no seu tempo</h3><p>Nada que precise de equipe. O calendário respeita as horas por semana que você disse ter.</p></div>
   </div>
 </div></section>
 
-<section class="alt"><div class="wrap">
-  <div class="grade g2">
-    <div><h2>É para você se…</h2><ul>
-      <li>tem um negócio com endereço, em cidade pequena ou média;</li>
-      <li>vende no balcão, no WhatsApp, por agenda ou por entrega;</li>
-      <li>toca o marketing sozinho, entre um atendimento e outro.</li></ul></div>
-    <div><h2>Não é para você se…</h2><ul>
-      <li>quer que alguém poste por você todos os dias;</li>
-      <li>espera resultado garantido, porque o kit não garante;</li>
-      <li>não sabe o que vende nem por quanto: o diagnóstico vai apontar isso antes de qualquer post.</li></ul></div>
-  </div>
+<section class="banda"><div class="wrap dois">
+  <div class="para"><h2>É para você se…</h2><ul>
+    <li>tem um negócio com endereço, em cidade pequena ou média;</li>
+    <li>vende no balcão, no WhatsApp, por agenda ou por entrega;</li>
+    <li>toca o marketing sozinho, entre um atendimento e outro.</li></ul></div>
+  <div class="nao"><h2>Não é para você se…</h2><ul>
+    <li>quer que alguém poste por você todos os dias;</li>
+    <li>espera resultado garantido, porque o kit não garante;</li>
+    <li>não sabe o que vende nem por quanto: o diagnóstico vai apontar isso antes de qualquer post.</li></ul></div>
 </div></section>
 
 
-<section id="kit" class="alt"><div class="wrap">
-  <span class="etiqueta">Kit completo</span>
-  <h2>Do diagnóstico ao calendário, na ordem certa</h2>
-  <p>Você recebe o painel com os 10 agentes e o módulo do Google, a ordem de uso em 11 passos, com o que colar em cada um.</p>
+<section id="kit" class="banda"><div class="wrap preco">
+  <div>
+    <span class="rotulo">kit completo</span>
+    <h2>Do diagnóstico ao calendário, na ordem certa</h2>
+    <p style="color:var(--text-muted);max-width:32em">Você recebe o painel com os 10 agentes e o módulo do Google, a ordem de uso em 11 passos, com o que colar em cada um.</p>
+  </div>
   <div class="ticket">
-    <p style="font-family:'Fraunces',Georgia,serif;font-size:1.8rem;font-weight:800;margin:0 0 6px">R$ 27,90 (pagamento único)</p>
-    <p class="mini" style="margin:0 0 14px">Faça primeiro o diagnóstico grátis. Se a Ficha não te convencer, você não gastou nada. As condições de pagamento você combina direto comigo, pelo WhatsApp.</p>
-    <a class="btn" href="https://wa.me/5544988553062?text=Oi!%20Vi%20o%20Kit%20Balc%C3%A3o%20e%20quero%20saber%20como%20comprar%20o%20kit%20completo." rel="noopener">Quero o kit pelo WhatsApp</a>
+    <p class="valor">R$ 27,90</p><p class="valor-nota">pagamento único</p>
+    <a class="btn cta" href="https://wa.me/5544988553062?text=Oi!%20Vi%20o%20Kit%20Balc%C3%A3o%20e%20quero%20saber%20como%20comprar%20o%20kit%20completo." rel="noopener">Quero o kit pelo WhatsApp</a>
+    <p class="mini">Faça primeiro o diagnóstico grátis. Se a Ficha não te convencer, você não gastou nada. As condições de pagamento você combina direto comigo, pelo WhatsApp.</p>
   </div>
 </div></section>
 
-<section><div class="wrap">
-  <span class="etiqueta">Dúvidas</span>
+<section class="faq"><div class="wrap">
+  <span class="rotulo">dúvidas</span>
   <h2>Perguntas de quem toca negócio</h2>
   <details><summary>Preciso entender de marketing?</summary><p>Não. A primeira etapa é uma conversa: o assistente pergunta e você responde como responderia no balcão. Cada entrega seguinte é escrita para ser executada pelo celular, sem equipe.</p></details>
   <details><summary>Quanto tempo por semana eu preciso ter?</summary><p>Você informa na conversa quantas horas tem. O calendário de 30 dias é montado dentro desse limite, com menos posts e mais constância, em vez de uma agenda que você não cumpre.</p></details>
@@ -171,16 +402,21 @@ label{font-weight:700;display:block;margin:12px 0 6px}
   <details><summary>Isso garante mais clientes?</summary><p>Não. O kit organiza o que você já tem de diferente e entrega um plano que dá para executar. O resultado depende do negócio e da execução. O diagnóstico é honesto: se o problema for preço fora do mercado ou falta de diferencial, ele diz.</p></details>
   <details><summary>Serve para qualquer negócio?</summary><p>Foi desenhado para negócio local de cidade pequena e média, que vende no balcão, no WhatsApp, por agenda ou por entrega. Não foi pensado para loja virtual nacional nem para marca sem endereço.</p></details>
   <details><summary>Quanto custa o kit completo?</summary><p>R$ 27,90 (pagamento único). As condições de pagamento você combina pelo WhatsApp. O diagnóstico com o Entrevistador é grátis e não pede cartão.</p></details>
-  <div class="acoes"><a class="btn" href="diagnostico.html">Fazer meu diagnóstico grátis</a></div>
+  <div class="acoes"><a class="btn cta" href="diagnostico.html">Fazer meu diagnóstico grátis</a></div>
 </div></section>
+
 </main>
 
-<footer><div class="wrap">
-  <p><strong>Kit Balcão</strong> — marketing para negócio de bairro e de cidade pequena e média.</p>
-  <p>O kit não promete venda. Ele organiza o que o seu negócio já tem de diferente e entrega um plano que cabe no seu tempo.</p>
-  <p><a href="diagnostico.html">Diagnóstico grátis</a> · <a href="https://wa.me/5544988553062?text=Oi!%20Tenho%20uma%20d%C3%BAvida%20sobre%20o%20Kit%20Balc%C3%A3o." rel="noopener">WhatsApp</a></p>
+<footer class="rodape"><div class="wrap">
+  <div>
+    <span class="mae"><img class="lockup" loading="lazy" src="assets/marca/aikronox-header.png" alt="Aikronox: IA aplicada. Tempo multiplicado." width="340" height="108"></span>
+  </div>
+  <div>
+    <p><strong style="color:var(--text)">Kit Balcão</strong> é um produto da Aikronox, feito para negócio de bairro e de cidade pequena e média.</p>
+    <p>O kit não promete venda. Ele organiza o que o seu negócio já tem de diferente e entrega um plano que cabe no seu tempo.</p>
+    <p><a href="diagnostico.html">Diagnóstico grátis</a> &nbsp;·&nbsp; <a href="https://wa.me/5544988553062?text=Oi!%20Tenho%20uma%20d%C3%BAvida%20sobre%20o%20Kit%20Balc%C3%A3o." rel="noopener">WhatsApp</a></p>
+  </div>
 </div></footer>
-<div class="barra"><a class="btn" href="diagnostico.html">Fazer meu diagnóstico grátis</a></div>
-
+<div class="barra"><a class="btn cta" href="diagnostico.html">Fazer meu diagnóstico grátis</a></div>
 </body>
 </html>
