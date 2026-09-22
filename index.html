@@ -240,6 +240,26 @@ section { padding-block: clamp(52px, 8vw, 104px); }
 .barra .btn { width: 100%; }
 @media (min-width: 860px) { .barra { display: none; } }
 
+/* ---------- ferramenta do teste da troca de logo (client-side, sem IA) ---------- */
+.ferramenta { border: 1px solid var(--border); border-radius: 20px; background: var(--surface); padding: clamp(20px, 4vw, 32px); }
+.ferramenta-form { display: grid; gap: 14px; max-width: 34rem; }
+.ferramenta-form label { font: 500 0.85rem/1.2 var(--mono); color: var(--text-muted); }
+.ferramenta-form input, .ferramenta-form textarea {
+  width: 100%; background: var(--bg); border: 1px solid var(--border); border-radius: 10px;
+  padding: 12px 14px; color: var(--text); font: 400 1rem/1.45 var(--corpo);
+}
+.ferramenta-form textarea { min-height: 84px; resize: vertical; }
+.ferramenta-form input:focus, .ferramenta-form textarea:focus { outline: 3px solid var(--cyan); outline-offset: 1px; border-color: var(--cyan); }
+.ferramenta-form .btn { justify-self: start; }
+.ferramenta-resultado { margin-top: 22px; padding: 18px 20px; border-radius: 14px; border-left: 3px solid var(--border); background: var(--bg); max-width: 40rem; }
+.ferramenta-resultado.generico { border-left-color: var(--magenta); }
+.ferramenta-resultado.neutro { border-left-color: var(--cyan); }
+.ferramenta-resultado.alerta { border-left-color: var(--border); }
+.ferramenta-resultado p { margin: 0 0 12px; color: var(--text-muted); }
+.ferramenta-resultado p:last-of-type { margin-bottom: 0; }
+.ferramenta-resultado strong { color: var(--text); }
+.ferramenta-resultado .btn { margin-top: 6px; }
+
 /* ---------- diagnóstico ---------- */
 .hero-simples { padding-block: clamp(44px, 8vw, 88px) clamp(32px, 6vw, 64px); }
 .passos-d { list-style: none; margin: 32px 0 0; padding: 0; display: grid; gap: 0; max-width: 46rem; }
@@ -322,6 +342,24 @@ details.ver summary { min-height: 48px; display: flex; align-items: center; curs
         <li>o bairro</li><li>o hábito da cidade</li><li>o jeito de falar</li><li>uma referência real da Ficha</li>
       </ul>
     </div>
+  </div>
+  <div style="margin-top:28px">
+    <span class="rotulo">teste a sua, agora</span>
+    <h3 style="margin-bottom:12px">Sem precisar de conta em nenhuma IA</h3>
+    <div class="ferramenta">
+  <div class="ferramenta-form">
+    <div>
+      <label for="ftl-nome">Nome do seu negócio</label>
+      <input id="ftl-nome" type="text" placeholder="Ex.: Padaria Boa Hora" autocomplete="off">
+    </div>
+    <div>
+      <label for="ftl-frase">Uma frase do seu site, Instagram ou cartão</label>
+      <textarea id="ftl-frase" placeholder="Ex.: Qualidade e tradição há 20 anos"></textarea>
+    </div>
+    <button type="button" class="btn cta" id="ftl-testar">Testar minha frase</button>
+  </div>
+  <div class="ferramenta-resultado" id="ftl-resultado" role="status" aria-live="polite" hidden></div>
+</div>
   </div>
 </div></section>
 
@@ -418,5 +456,36 @@ details.ver summary { min-height: 48px; display: flex; align-items: center; curs
   </div>
 </div></footer>
 <div class="barra"><a class="btn cta" href="diagnostico.html">Fazer meu diagnóstico grátis</a></div>
+<script>(function(){
+var PROIBIDAS=["qualidade e excelência","tradição e inovação","sua satisfação é nossa prioridade","transformando sonhos","venha conferir","o melhor da região","atendimento diferenciado"];
+function normalizar(s){return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')}
+function escHtml(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+function contemProibida(frase){var f=normalizar(frase);for(var i=0;i<PROIBIDAS.length;i++){if(f.indexOf(normalizar(PROIBIDAS[i]))!==-1)return PROIBIDAS[i]}return null}
+function trocarNome(frase,nome){if(!nome)return null;var re;try{re=new RegExp(nome.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi')}catch(e){return null}if(!re.test(frase))return null;return frase.replace(re,'outra loja qualquer')}
+var cta='<a class="btn sec" href="diagnostico.html">Fazer o diagnóstico completo, grátis</a>';
+var btn=document.getElementById('ftl-testar');
+if(!btn)return;
+btn.addEventListener('click',function(){
+  var nome=document.getElementById('ftl-nome').value.trim();
+  var frase=document.getElementById('ftl-frase').value.trim();
+  var out=document.getElementById('ftl-resultado');
+  out.hidden=false;
+  if(!frase){out.className='ferramenta-resultado alerta';out.innerHTML='<p>Cola uma frase pra eu testar.</p>';return}
+  var achada=contemProibida(frase);
+  if(achada){
+    out.className='ferramenta-resultado generico';
+    out.innerHTML='<p><strong>Essa é uma das frases proibidas do Kit Balcão:</strong> “'+escHtml(achada)+'”.</p><p>Ela serve pra qualquer loja da cidade. Troque por um detalhe que só o seu negócio tem: o bairro, um cliente real, um hábito da casa.</p>'+cta;
+    return;
+  }
+  var trocada=trocarNome(frase,nome);
+  if(trocada){
+    out.className='ferramenta-resultado neutro';
+    out.innerHTML='<p><strong>Sua frase:</strong> “'+escHtml(frase)+'”</p><p><strong>A mesma frase, com outro nome:</strong> “'+escHtml(trocada)+'”</p><p>As duas fazem sentido igual? Se sim, ela ainda está genérica. Se ficou estranho com outro nome, é sinal de que é sua de verdade.</p>'+cta;
+  }else{
+    out.className='ferramenta-resultado neutro';
+    out.innerHTML='<p>Sua frase nem cita “'+escHtml(nome||'o nome do seu negócio')+'” — e isso já é um sinal: se o nome não muda nada nela, ela também não muda nada pro cliente.</p><p>Frase específica cita o bairro, um cliente real, um número, um hábito da casa. Frase genérica cita qualidade, tradição, atendimento.</p>'+cta;
+  }
+});
+})();</script>
 </body>
 </html>

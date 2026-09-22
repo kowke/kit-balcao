@@ -28,6 +28,7 @@ Nunca me deixe achando que uma mudança está no ar quando ela só existe local 
 **Onde as coisas estão**
 - `kit-balcao/` — fonte do projeto. Edite os agentes em `conteudo/agentes/*.md` e as regras em `conteudo/regras-de-ouro.md`. `config.json` guarda WhatsApp, preço e URL. `node build.js` gera `site/` e `prompts/`. Nunca edite `site/` nem `prompts/` à mão.
 - `publicar-github/` — o repositório git (remoto `kowke/kit-balcao`, branch `main`, GitHub Pages). O site vive em https://kowke.github.io/kit-balcao/
+- Páginas publicadas: `index.html` (landing completa), `diagnostico.html` (isca: só o Entrevistador) e `teste.html` (isca mais leve: o teste da troca de logo interativo, sem IA — pensado pra ser o primeiro link que se manda a um dono de negócio, antes de pedir os 15 minutos do diagnóstico completo). `painel.html` não é publicado (ver exceção abaixo).
 - `referencias/marketingskills/` — biblioteca de terceiros (coreyhaines31/marketingskills, MIT, commit em `referencias/marketingskills.commit.txt`). Só consulta para melhorar os agentes: não é skill ativa e nunca entra no repositório publicado. Não copie texto dela literalmente para os agentes: adapte a técnica ao negócio local brasileiro.
 - Esta pasta (`E:\KITBALCAO`) não é um repositório git. Os comandos git rodam dentro de `publicar-github/`.
 
@@ -41,7 +42,8 @@ Nunca me deixe achando que uma mudança está no ar quando ela só existe local 
 O `painel.html` contém o texto completo de todos os agentes, ou seja, o produto que se vende por R$ 27,90. Enquanto o repositório for público e o painel não tiver senha, ele **não sobe** sozinho: publicar seria entregar o produto de graça, e um push público não se desfaz de verdade (fica no histórico do git). O Claude avisa em vez de publicar. Para o painel entrar no ar, o repositório precisa ser privado com Pages, ou o painel precisa de proteção de acesso.
 
 **Frases proibidas no site**
-A landing mostra "Qualidade e excelência", "Venha conferir" e "O melhor da região" riscadas na seção "O inimigo", como exemplo do que o kit combate. Os prompts dos agentes listam as frases proibidas porque é a definição da regra. Fora esses dois usos, nenhuma delas pode aparecer.
+A landing mostra "Qualidade e excelência", "Venha conferir" e "O melhor da região" riscadas na seção "O inimigo", como exemplo do que o kit combate. Os prompts dos agentes listam as frases proibidas porque é a definição da regra. A ferramenta de teste (`templates/marca.js`, função `scriptTeste`) também carrega as 7 frases inteiras, dentro de um `<script>`, como dado de comparação (`var PROIBIDAS=[...]`) — é assim que ela detecta a frase proibida sem precisar de IA. Fora esses três usos, nenhuma delas pode aparecer como texto de marketing do próprio site.
+As 7 frases não ficam escritas duas vezes: `build.js` extrai a lista direto da regra 3 do `conteudo/regras-de-ouro.md` (procura a linha "N. PROIBIDO: ..." e pega o que está entre aspas) e passa para `templates/marca.js`. Editar a regra 3 já atualiza a landing e a ferramenta no próximo build — não edite a lista em nenhum outro lugar.
 
 **O que ainda não foi validado**
 Os prompts dos agentes nunca foram rodados de ponta a ponta numa IA com um negócio real. Não afirme que o kit "funciona" além do que foi testado: o site (botão de copiar, Ficha salva no aparelho) foi testado; a qualidade do que os agentes entregam, não.
